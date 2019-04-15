@@ -1,4 +1,4 @@
-## 果园 WebView 跳转协议
+# 果园 WebView 跳转协议
 
 举例：[fruitday://path?parameter1=v1&parameter2=v2](fruitday://path?parameter1=v1&parameter2=v2)
 
