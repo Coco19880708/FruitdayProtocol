@@ -56,7 +56,7 @@ v6 会员开通成功				|openVipNotification |none
 
 字段名|用途|类型|备注
 :--|:--|:--|:--
-sharePlatformTypes	|分享平台	| String		| 多类型用逗号隔开如：``0,1,2,3,4`` \n 类型：``0-qq分享 1-qq空间 2-朋友圈 3-微信好友 4-微博 5-朋友圈图片``
+sharePlatformTypes	|分享平台	| String		| 多类型用逗号隔开如：``0,1,2,3,4`` 类型：``0-qq分享 1-qq空间 2-朋友圈 3-微信好友 4-微博 5-朋友圈图片``
 shareTitle			|分享标题	| String		|-
 shareText				|分享内容	| String		|-
 shareImageUrl			|分享图片	| String		|-
