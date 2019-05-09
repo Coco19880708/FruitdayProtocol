@@ -1,6 +1,18 @@
 # 果园 WebView 跳转协议
 
-举例：[fruitday://path?parameter1=v1&parameter2=v2](fruitday://path?parameter1=v1&parameter2=v2)
+举例：
+
+```
+fruitday://path?parameter1=v1&parameter2=v2)
+```
+
+webUrl 转换规则：``# 替换 ?``,``* 替换 =``。
+
+```
+fruitday://LaunchMiniProgram?userName=gh_329d04d99224&path=/pages/webView/index#src*https://huodongcdnqn.fruitday.com/sale/foretaste_v2/index.html#id*85
+```
+
+
 
 协议名称 | 协议 Path | 入参 
 :--|:--|:--
@@ -56,12 +68,12 @@ v6 会员开通成功				|openVipNotification |none
 
 字段名|用途|类型|备注
 :--|:--|:--|:--
-sharePlatformTypes	|分享平台	| String		| 多类型用逗号隔开如：``0,1,2,3,4`` 类型：``0-qq分享 1-qq空间 2-朋友圈 3-微信好友 4-微博 5-朋友圈图片``
+sharePlatformTypes	|分享平台	| String		| 多类型用逗号隔开如：``0,1,2,3,4`` 类型：``0-qq分享 1-qq空间 2-朋友圈 3-微信好友 4-微博 5-朋友圈图片 6-小程序``
 shareTitle			|分享标题	| String		|-
 shareText				|分享内容	| String		|-
 shareImageUrl			|分享图片	| String		|-
 shareUrl				|分享链接	| String		|-
 shareType				|分享类型	| Int			| 1、图片 2、Web
-webpageUrl			|兼容版本	| String		| 仅启动小程序时需要
-userName				|小程序	| String		| 仅启动小程序时需要
+webpageUrl			|兼容微信老版本	| String		| 仅启动小程序时需要
+userName				|小程序wxID	| String		| 仅启动小程序时需要
 path					|小程序路径	| String		| 仅启动小程序时需要
